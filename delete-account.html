@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete Your Account — MotiveAction</title>
+<meta name="description" content="How to request deletion of your MotiveAction account and data.">
+<meta name="theme-color" content="#800020">
+<link rel="icon" href="png/motiveaction-64.png" type="image/png">
+<link rel="apple-touch-icon" href="png/motiveaction-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="/"><img class="brand-ico" src="png/motiveaction-64.png" alt="" width="34" height="34"><span>motiveaction</span></a>
+  <nav>
+    <a href="/#features">Features</a><a href="support.html">Support</a>
+    <a href="https://epsiloop.io" class="nav-logo" aria-label="Epsiloop"><img src="logo.svg" alt="Epsiloop" width="30" height="30"></a>
+    <div class="apps">
+      <button class="apps-btn" aria-label="Our projects" aria-haspopup="true" aria-expanded="false"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></button>
+      <div class="apps-menu" role="menu">
+        <a href="https://motivaction.epsiloop.io" role="menuitem"><img src="apps/motivaction.png" alt="" width="56" height="56">Motivaction</a>
+        <a href="https://biovault.epsiloop.io" role="menuitem"><img src="apps/biovault.png" alt="" width="56" height="56">BioVault</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="legal">
+  <h1 class="reveal">Delete Your Account</h1>
+  <p class="meta reveal">Applies to the Motiveaction mobile app (iOS &amp; Android) and desktop app.</p>
+  <div class="body">
+
+
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      <h2>How to request deletion</h2>
+      <p>You can request that your Motiveaction account and associated data be deleted in either of these ways:</p>
+      <ul>
+        <li><strong>Use the form below</strong> — enter your account's email and password. Once verified, your account and its data are deleted immediately.</li>
+        <li><strong>Email us</strong> at <a href="mailto:info.softsav@gmail.com">info.softsav@gmail.com</a> from your account's email address, with the subject "Delete my account", if you'd rather not enter your password here.</li>
+      </ul>
+      
+
+      
+
+      <form method="POST" action="https://motiveaction.app/delete-account" class="del-form">
+        <label for="email">Account email</label>
+        <input id="email" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required autocomplete="current-password">
+        <button type="submit" onclick="return confirm('This permanently deletes your account and all your data. This cannot be undone. Continue?');">Delete my account</button>
+      </form>
+      <p>We ask for your password so deletion can happen immediately and only for the account holder. After you submit, you will see the result on motiveaction.app.</p>
+      <h2>What gets deleted</h2>
+      <p>Once your request is verified, we permanently delete:</p>
+      <ul>
+        <li>Your account record, email address, and name</li>
+        <li>All learning content — topics, roadmap items, progress, and comprehension tasks</li>
+        <li>Reminder/notification settings</li>
+        <li>Device sync and sign-in history</li>
+        <li>Ad interaction history</li>
+        <li>Country/locale data</li>
+        <li>Premium/subscription status</li>
+      </ul>
+
+      <h2>What's retained, and why</h2>
+      <ul>
+        <li><strong>Payment transaction records</strong> (amount, date, provider) — retained for 7 years where required by tax and accounting law. These records are dissociated from your profile once the account itself is deleted.</li>
+      </ul>
+      <p>No other data is retained after deletion. See our <a href="privacy.html">Privacy Policy</a> for full details on data retention.</p>
+
+    
+  </div>
+</main>
+
+<footer>
+  <div class="links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a><a href="support.html">Support</a></div>
+  © <span id="y"></span> motiveaction by <a href="https://epsiloop.io" style="color:inherit">Epsiloop</a> · Small steps, endless progress.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

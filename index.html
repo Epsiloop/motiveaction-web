@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MotiveAction — Turn motivation into action</title>
+<meta name="description" content="MotiveAction turns motivation into action with roadmaps, smart reminders and AI guidance.">
+<meta name="theme-color" content="#800020">
+<link rel="icon" href="png/motiveaction-64.png" type="image/png">
+<link rel="apple-touch-icon" href="png/motiveaction-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="/"><img class="brand-ico" src="png/motiveaction-64.png" alt="" width="34" height="34"><span>motiveaction</span></a>
+  <nav>
+    <a href="/#features">Features</a><a href="support.html">Support</a>
+    <a href="https://epsiloop.io" class="nav-logo" aria-label="Epsiloop"><img src="logo.svg" alt="Epsiloop" width="30" height="30"></a>
+    <div class="apps">
+      <button class="apps-btn" aria-label="Our projects" aria-haspopup="true" aria-expanded="false"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></button>
+      <div class="apps-menu" role="menu">
+        <a href="https://motivaction.epsiloop.io" role="menuitem"><img src="apps/motivaction.png" alt="" width="56" height="56">Motivaction</a>
+        <a href="https://biovault.epsiloop.io" role="menuitem"><img src="apps/biovault.png" alt="" width="56" height="56">BioVault</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow reveal">motiveaction.epsiloop.io</p>
+    <img class="hero-ico reveal" src="png/motiveaction-128.png" alt="MotiveAction" width="88" height="88">
+    <h1 class="reveal product">Turn motivation<br><span class="grad">into action.</span></h1>
+    <p class="lead reveal">Break any skill into a roadmap, get reminders until each step is done, and let AI help you decide what to learn next. Free to start, no card required.</p>
+    <div class="cta reveal">
+      <a href="https://apps.apple.com/am/app/motiveaction-roadmaps-with-ai/id6802932492" class="btn" target="_blank" rel="noopener"> Download on the App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=app.softsav.motiveaction" class="btn" target="_blank" rel="noopener">▶ Get it on Google Play</a>
+      <a href="#features" class="btn ghost">See features</a>
+    </div>
+    <div class="scroll" aria-hidden="true"></div>
+  </section>
+
+  <section id="features" class="section">
+    <h2 class="reveal">Everything you need. Nothing you don't.</h2>
+    <div class="cards"><div class="card tilt feat reveal"><span class="ico">🤖</span><h3>AI that helps you improve</h3><p>Looks at what you've learned and where you're stuck, then suggests exactly what to focus on next.</p></div><div class="card tilt feat reveal"><span class="ico">🗺️</span><h3>Topic roadmaps</h3><p>Break any skill into ordered steps. Add items manually or let AI draft a full roadmap (Premium).</p></div><div class="card tilt feat reveal"><span class="ico">⏱️</span><h3>Daily time budget</h3><p>Set how many minutes per day you want to spend on each topic and track progress automatically.</p></div><div class="card tilt feat reveal"><span class="ico">🔔</span><h3>Smart reminders</h3><p>Notifications repeat until each item is read. Free: every 2 hours, 9am–9pm. Premium: your own schedule.</p></div><div class="card tilt feat reveal"><span class="ico">✅</span><h3>Progress tracking</h3><p>Mark items as done and watch the progress bar move. Simple satisfaction, every day.</p></div><div class="card tilt feat reveal"><span class="ico">🧠</span><h3>Comprehension tasks</h3><p>Optional quizzes per roadmap item keep knowledge fresh after you've read it.</p></div></div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">Premium for $2/month</h2>
+    <p class="about reveal">Full notification control, AI roadmap generation and every future feature. Cancel any time. Available on macOS, Windows, Linux, iOS and Android.</p>
+    <div class="cta reveal">
+      <a href="https://apps.apple.com/am/app/motiveaction-roadmaps-with-ai/id6802932492" class="btn" target="_blank" rel="noopener"> App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=app.softsav.motiveaction" class="btn" target="_blank" rel="noopener">▶ Google Play</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section center">
+    <h2 class="reveal">Questions? We're here.</h2>
+    <a class="btn reveal" href="mailto:info.softsav@gmail.com">info.softsav@gmail.com</a>
+  </section>
+</main>
+
+<footer>
+  <div class="links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a><a href="support.html">Support</a></div>
+  © <span id="y"></span> motiveaction by <a href="https://epsiloop.io" style="color:inherit">Epsiloop</a> · Small steps, endless progress.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
