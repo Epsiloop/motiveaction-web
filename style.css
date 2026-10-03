@@ -56,7 +56,9 @@ footer{text-align:center;color:var(--mute);padding:40px 20px;border-top:1px soli
 .hero.compact{min-height:78vh}
 .hero h1.product{font-size:clamp(2.6rem,7vw,5.2rem)}
 .feat{display:block;cursor:default}
-.feat .ico{font-size:1.8rem;display:block;margin-bottom:12px}
+.feat .ico{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;margin-bottom:16px;background:linear-gradient(135deg,rgba(255,90,122,.16),rgba(128,0,32,.28));border:1px solid rgba(255,90,122,.28);box-shadow:0 8px 24px rgba(128,0,32,.35),inset 0 1px 0 rgba(255,255,255,.1);transition:transform .25s}
+.feat .ico svg{width:30px;height:30px}
+.feat:hover .ico{transform:translateY(-3px) scale(1.06)}
 .feat h3{font-size:1.25rem;margin:0 0 8px}
 .feat p{color:var(--mute);font-size:.98rem}
 .legal{max-width:1100px;margin:auto;padding:130px 6vw 90px}
