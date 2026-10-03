@@ -105,6 +105,16 @@ footer .links a:hover{color:var(--pink)}
 @media(max-width:600px){
   .nav{padding:10px 5vw}
   .nav nav{gap:10px}
+  .nav nav>a.nav-logo{display:flex}
   .apps{position:static}
   .apps-menu{position:absolute;left:5vw;right:5vw;width:auto;top:calc(100% + 8px)}
 }
+
+.store{display:inline-flex;align-items:center;gap:12px;padding:10px 22px 10px 18px;border-radius:14px;color:#fff!important;text-decoration:none;
+  background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03)),#150a0e;border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 8px 24px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(10px);transition:transform .2s,border-color .2s,box-shadow .2s}
+.store:hover{transform:translateY(-2px);border-color:var(--pink);box-shadow:0 12px 32px rgba(163,21,58,.5),inset 0 1px 0 rgba(255,255,255,.18)}
+.store svg{width:28px;height:28px;flex:none}
+.store span{display:flex;flex-direction:column;text-align:left;line-height:1.1}
+.store small{font-size:.68rem;opacity:.7;letter-spacing:.02em}
+.store b{font-size:1.1rem;font-weight:600}
