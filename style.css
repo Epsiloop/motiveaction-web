@@ -120,3 +120,6 @@ footer .links a:hover{color:var(--pink)}
 .store span{display:flex;flex-direction:column;text-align:left;line-height:1.1}
 .store small{font-size:.68rem;opacity:.7;letter-spacing:.02em}
 .store b{font-size:1.1rem;font-weight:600}
+
+/* --- coming soon badge --- */
+.badge{display:inline-block;vertical-align:middle;margin-left:8px;padding:3px 10px;border-radius:999px;font:500 .68rem Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--pink);border:1px solid rgba(255,90,122,.4);background:rgba(255,90,122,.1)}
