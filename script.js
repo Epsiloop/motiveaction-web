@@ -51,3 +51,8 @@ const setApps=o=>{am.classList.toggle('open',o);ab.setAttribute('aria-expanded',
 ab.addEventListener('click',e=>{e.stopPropagation();setApps(!am.classList.contains('open'))});
 addEventListener('click',e=>{if(!am.contains(e.target))setApps(false)});
 addEventListener('keydown',e=>{if(e.key==='Escape')setApps(false)});
+// Download buttons: tap toggles on touch devices (hover/focus handle desktop)
+const dls=document.querySelectorAll('.dl');
+dls.forEach(d=>d.querySelector('.dl-head').addEventListener('click',()=>{
+  const o=!d.classList.contains('open');dls.forEach(x=>x.classList.remove('open'));d.classList.toggle('open',o)}));
+addEventListener('click',e=>{if(!e.target.closest('.dl'))dls.forEach(x=>x.classList.remove('open'))});

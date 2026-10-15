@@ -123,3 +123,43 @@ footer .links a:hover{color:var(--pink)}
 
 /* --- coming soon badge --- */
 .badge{display:inline-block;vertical-align:middle;margin-left:8px;padding:3px 10px;border-radius:999px;font:500 .68rem Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--pink);border:1px solid rgba(255,90,122,.4);background:rgba(255,90,122,.1)}
+/* --- download buttons: fixed-size button; version list drops down as an overlay (no layout shift) --- */
+.cta{align-items:flex-start}
+.dl{position:relative;width:230px;color:#fff;cursor:pointer;outline:none;z-index:1}
+.dl:hover,.dl:focus-within,.dl.open{z-index:20}
+.dl-head{position:relative;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 18px;border-radius:16px;
+  background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03)),#150a0e;border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 8px 24px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(10px);
+  transition:border-color .3s,box-shadow .4s,border-radius .3s .1s}
+.dl:hover .dl-head,.dl:focus-within .dl-head,.dl.open .dl-head{border-color:var(--pink);border-radius:16px 16px 0 0;transition-delay:0s;
+  box-shadow:0 12px 30px rgba(163,21,58,.45),inset 0 1px 0 rgba(255,255,255,.18)}
+.dl-head>svg{width:28px;height:28px;flex:none;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.dl-head>span{display:flex;flex-direction:column;line-height:1.1;flex:1}
+.dl-head small{font-size:.68rem;opacity:.7}
+.dl-head b{font-size:1.1rem;font-weight:600}
+.chev{width:8px;height:8px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:translateY(-2px) rotate(45deg);transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.dl:hover .chev,.dl:focus-within .chev,.dl.open .chev{transform:translateY(2px) rotate(225deg);border-color:var(--pink)}
+.dl:hover .dl-head>svg,.dl:focus-within .dl-head>svg,.dl.open .dl-head>svg{transform:translateY(-2px) scale(1.1)}
+.dl-opts{position:absolute;left:0;right:0;top:100%;display:grid;grid-template-rows:0fr;pointer-events:none;
+  background:#150a0e;border-radius:0 0 16px 16px;box-shadow:0 24px 50px rgba(0,0,0,.6);transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.dl:hover .dl-opts,.dl:focus-within .dl-opts,.dl.open .dl-opts{grid-template-rows:1fr;pointer-events:auto}
+.dl-opts>div{min-height:0;overflow:hidden;padding:0 10px;display:flex;flex-direction:column;gap:6px;border:1px solid transparent;border-top:0;border-radius:0 0 16px 16px;
+  transition:padding .45s,border-color .3s}
+.dl:hover .dl-opts>div,.dl:focus-within .dl-opts>div,.dl.open .dl-opts>div{padding:10px 10px 12px;border-color:var(--pink)}
+.dl-opts a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;color:var(--text)!important;text-decoration:none;
+  background:rgba(255,255,255,.05);opacity:0;transform:translateY(-8px);transition:opacity .35s,transform .35s,background .2s}
+.dl:hover .dl-opts a,.dl:focus-within .dl-opts a,.dl.open .dl-opts a{opacity:1;transform:none}
+.dl:hover .dl-opts a:nth-child(2),.dl:focus-within .dl-opts a:nth-child(2),.dl.open .dl-opts a:nth-child(2){transition-delay:.07s}
+.dl-opts a:hover,.dl-opts a:focus-visible{background:linear-gradient(135deg,var(--burg-2),var(--burg));outline:none}
+.dl-opts a span{display:flex;flex-direction:column;flex:1;line-height:1.2}
+.dl-opts a b{font-size:.95rem;font-weight:600}
+.dl-opts a small{font-size:.7rem;opacity:.65}
+.dl-opts a em{font-style:normal;font-size:.72rem;opacity:.65}
+.dl-opts a svg{width:18px;height:18px;flex:none;transition:transform .25s}
+.dl-opts a:hover svg{transform:translateY(2px)}
+@media(max-width:600px){.dl{width:100%}}
+.cta-groups{display:flex;flex-direction:column;gap:28px;margin-top:32px}
+.cta-groups .cta{margin-top:0}
+.cta-label{color:var(--mute);letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;margin-bottom:12px}
+.center .cta-groups,.center .cta-group{align-items:center}
+.center .cta{justify-content:center}
